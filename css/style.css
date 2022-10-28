@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+
+}
+
+div.body-site{
+    border: 1px solid blue;
+    width: 1380px;
+    height: 900px;
+}
+/* ----------------- ЧАСТЬ HEADER -----------------------*/
+header{
+    border: 1px solid rgb(85, 148, 13);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+ 
+
+}
+
+img.Logo{
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgb(183, 13, 235);
+}
+
+p.header{
+    display: inline-block;
+    height: 64px;
+    border: 1px solid rgb(183, 13, 235);
+}
+
+/* ----------------- ЧАСТЬ MAIN -----------------------*/
+
+
+main{
+    border: 1px solid rgb(235, 57, 13);
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside.left{
+    border: 1px solid red;
+}
+
+nav{
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    height: 25px;
+    width: 25px;
+}
+
+section{
+    border: 1px solid orange;
+    height: 25px;
+    width: 25px;
+}
+
+
+aside.right{
+    border: 1px solid rgb(11, 43, 104);
+}
+
+article{
+    border: 1px solid yellowgreen;
+    background-color: yellowgreen;
+    height: 25px;
+
+}
+
+p{
+    border: 1px solid red;
+}
+
+/* ----------------- ЧАСТЬ FOOTER -----------------------*/
+
+footer{
+    border: 1px solid rgb(183, 13, 235);
+    height: 150px;
+}
+
