@@ -1,84 +1,110 @@
-body{
+body {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    outline: 2px solid black;
 
 }
 
-div.body-site{
-    border: 1px solid blue;
+div.body-site {
+    /*border: 1px solid blue;*/
     width: 1380px;
-    height: 900px;
 }
+
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
-header{
-    border: 1px solid rgb(85, 148, 13);
+header {
+    /*border: 1px solid rgb(85, 148, 13);*/
     height: 150px;
     display: flex;
     justify-content: center;
- 
-
 }
 
-img.Logo{
+img.Logo-header {
     width: 64px;
     height: 64px;
-    border: 1px solid rgb(183, 13, 235);
+    /*border: 1px solid rgb(183, 13, 235);*/
 }
 
-p.header{
+p.header {
     display: inline-block;
-    height: 64px;
-    border: 1px solid rgb(183, 13, 235);
+    /*border: 1px solid rgb(183, 13, 235);*/
 }
 
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
 
-
-main{
-    border: 1px solid rgb(235, 57, 13);
-    height: 500px;
+main {
+    /*border: 1px solid rgb(235, 57, 13);*/
     display: flex;
-    justify-content: space-between;
+    /*justify-content: center;*/
 }
 
-aside.left{
-    border: 1px solid red;
-}
-
-nav{
-    border: 1px solid yellowgreen;
-    background-color: yellowgreen;
-    height: 25px;
-    width: 25px;
-}
-
-section{
-    border: 1px solid orange;
-    height: 25px;
-    width: 25px;
-}
-
-
-aside.right{
-    border: 1px solid rgb(11, 43, 104);
-}
-
-article{
-    border: 1px solid yellowgreen;
-    background-color: yellowgreen;
-    height: 25px;
+aside.left {
+    /*border: 1px solid red;*/
+    flex: 1;
 
 }
 
-p{
-    border: 1px solid red;
+nav {
+    /*border: 1px solid yellowgreen;*/
+}
+
+section {
+    /*border: 1px solid green;*/
+    flex: 7;
+
+}
+
+div.articles {
+    /*border: 1px solid darkblue;*/
+    /*padding: 10px;*/
+    /*display: block;
+    flex-direction: row;
+    justify-content: space-around;*/
+}
+
+div.line-1{
+    /*border: 1px solid red;*/
+    display: flex;
+}
+
+div.line-2{
+    /*border: 1px solid red;*/
+    display: flex;
+}
+
+article {
+    /*border: 1px solid yellowgreen;*/
+    flex: 1;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+img.logo-article {
+    margin: 5px;
+    float: left;
+    width: 32px;
+    height: 32px;
+    /*border: 1px solid rgb(183, 13, 235);*/
+}
+
+strong.HTML{
+    color: chocolate;
+}
+
+aside.right {
+    /*border: 1px solid rgb(11, 43, 104);*/
+    flex: 2;
+
+}
+
+p {
+    /*border: 1px solid red;*/
 }
 
 /* ----------------- ЧАСТЬ FOOTER -----------------------*/
 
-footer{
-    border: 1px solid rgb(183, 13, 235);
+footer {
+    /*border: 1px solid rgb(183, 13, 235);*/
     height: 150px;
 }
 
