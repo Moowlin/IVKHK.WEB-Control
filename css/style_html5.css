@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+div.body-site {
+    outline-style: solid;
+    width: 1380px;
+}
+
+header{
+    outline-style: solid;
+}
+
+
+main{
+    outline-style: solid;
+}
+
+footer{
+    outline-style: solid;
+}
+
+aside.left{
+    outline-style: solid;
+}
+
+section{
+    outline-style: solid;
+}

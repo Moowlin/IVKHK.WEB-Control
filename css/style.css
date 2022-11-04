@@ -1,8 +1,6 @@
 body {
     display: flex;
     justify-content: center;
-    outline: 2px solid black;
-
 }
 
 div.body-site {
@@ -16,13 +14,12 @@ header {
     justify-content: center;
 }
 
-
-div.logo-left{
+div.logo-left {
     margin-top: 50px;
     margin-right: 200px;
 }
 
-div.logo-right{
+div.logo-right {
     margin-top: 50px;
     margin-left: 200px;
 }
@@ -40,8 +37,6 @@ img.Logo-header {
     border-bottom: 2px solid rgb(44, 230, 255);
 }
 
-
-
 h1.header {
     margin-top: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -50,10 +45,9 @@ h1.header {
     letter-spacing: 5px;
     color: #FF0000;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
-	text-shadow: 3px 3px 2px white,
-                4px 4px 2px blue,
-                5px 5px 2px red;
-    
+    text-shadow: 3px 3px 2px white,
+        4px 4px 2px blue,
+        5px 5px 2px red;
 }
 
 
@@ -63,62 +57,45 @@ main {
 }
 
 
-
-
 /* ---- left colomn --- */
 aside.left {
-    border: 1px solid red;
     flex: 1;
 }
+
 nav {
-    margin-top: 60px;
-    border: 1px solid yellowgreen;
+    margin-top: 80px;
 }
 
-li{
-    font-weight: 400;
+li {
+    font-weight: 600;
+    line-height: 1.5;
+    color: darkblue;
 }
-
-
-
-
-
 
 
 
 /* ---- center colomn --- */
 
-h3{
+h3 {
     text-align: center;
     text-transform: uppercase;
-    color:darkblue;
+    color: darkblue;
 }
 
 section {
-    /*border: 1px solid green;*/
     flex: 7;
 }
 
-div.articles {
-    /*border: 1px solid darkblue;*/
-    /*padding: 10px;*/
-    /*display: block;
-    flex-direction: row;
-    justify-content: space-around;*/
-}
 
-div.line-1{
-    /*border: 1px solid red;*/
+div.line-1 {
     display: flex;
 }
 
-div.line-2{
-    /*border: 1px solid red;*/
+div.line-2 {
     display: flex;
 }
 
 article {
-    /*border: 1px solid yellowgreen;*/
     flex: 1;
     padding-right: 15px;
     padding-left: 15px;
@@ -129,24 +106,24 @@ h4.header-article {
     font-weight: 300;
     text-align: center;
     color: aliceblue;
-    text-shadow: 
-		-0   -1px 0   #000000,
-		 0   -1px 0   #000000,
-		-0    1px 0   #000000,
-		 0    1px 0   #000000,
-		-1px -0   0   #000000,
-		 1px -0   0   #000000,
-		-1px  0   0   #000000,
-		 1px  0   0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000;
-    background: linear-gradient( rgb(188, 195, 196) ,rgb(30, 14, 168) , rgb(201, 15, 15) );
+    text-shadow:
+        -0 -1px 0 #000000,
+        0 -1px 0 #000000,
+        -0 1px 0 #000000,
+        0 1px 0 #000000,
+        -1px -0 0 #000000,
+        1px -0 0 #000000,
+        -1px 0 0 #000000,
+        1px 0 0 #000000,
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000,
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+    background: linear-gradient(rgb(188, 195, 196), rgb(30, 14, 168), rgb(201, 15, 15));
     /*генератор обводки https://protocoder.ru/css/strokeTextGen */
 }
 
@@ -155,29 +132,26 @@ img.logo-article {
     float: left;
     width: 32px;
     height: 32px;
-    /*border: 1px solid rgb(183, 13, 235);*/
 }
 
-strong.HTML{
+strong.HTML {
     color: chocolate;
 }
 
-strong.CSS{
+strong.CSS {
     color: rgb(32, 19, 212);
 }
 
-strong.Bootstrap{
+strong.Bootstrap {
     color: rgb(124, 24, 190);
 }
 
-strong.AngularJS{
+strong.AngularJS {
     color: rgb(221, 20, 20);
 }
 
 p {
     text-align: justify;
-    /*border: 1px solid red;*/
-
 }
 
 p.border {
@@ -193,34 +167,24 @@ p.border {
 
 
 
-
-
-
-
-
-
-
 /* ---- right colomn --- */
 aside.right {
     margin-top: 20px;
-    /*border: 1px solid rgb(11, 43, 104);*/
     flex: 2;
 
 }
 
 article.news {
-    /*border: 1px solid yellowgreen;*/
     flex: 1;
     padding-right: 5px;
     padding-left: 15px;
 }
 
-h3.news{
+h3.news {
     text-align: center;
-    color:darkblue;
-    text-transform:none;
+    color: darkblue;
+    text-transform: none;
     font-weight: 600;
-    
 }
 
 h4.header-news {
@@ -232,28 +196,20 @@ h4.header-news {
 p.news {
     color: darkblue;
     text-align: justify;
-    /*border: 1px solid red;*/
-
 }
-
-
-
-
 
 
 
 /* ----------------- ЧАСТЬ FOOTER -----------------------*/
 
 footer {
-    /*border: 1px solid rgb(183, 13, 235);*/
     height: 150px;
 }
 
-p.footer{
+p.footer {
     text-align: center;
     text-shadow: rgb(20, 2, 85) 1px 1px 7px;
     color: rgb(8, 8, 56);
     font-weight: 600;
     font-size: large;
 }
-
