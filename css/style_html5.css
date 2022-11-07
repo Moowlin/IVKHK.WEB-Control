@@ -1,22 +1,22 @@
 body{
-    background-color: rgb(233, 229, 229);
+    background-color: darkgrey;
 }
 div.wrapper {
-    outline-style: solid;
+    /*outline-style: solid;*/
     width: 1380px;
     margin: auto;
 }
 
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
-header{
+/*header{
     outline-style: solid;
-}
-header nav{
+}*/
+/*header nav{
+    position: sticky;
     top: 10px;
     z-index: 1;
-    position: sticky;
     border: 2px solid green;
-}
+}*/
 
 /*header div.test{
     display: flex;
@@ -24,20 +24,38 @@ header nav{
 }*/
 
 
-header nav a{
-    /*padding: 10px;
+/*header nav a{
+    padding: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: aqua;
     border: 1px solid red;
-    border-radius: 20%;*/
-}
+    border-radius: 20%;
+}*/
+
 
 
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
 main{
     outline-style: solid;
+
+}
+div.main{
     display: flex;
+}
+
+aside.global_nav{
+    top:0px;
+    position: sticky;
+    background: aqua;
+    height: 25px;
+}
+
+nav.global-nav{
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* ---------- left colomn ---------- */
@@ -53,8 +71,8 @@ aside.left nav{
     flex-direction: column;
     border: 1px solid red;
     padding: 20px;
-    /*top: 50px;
-    position: sticky;*/
+    top: 40px;
+    position: sticky;
 }
 
 aside.left a{
@@ -70,22 +88,30 @@ section{
 
 article{
     outline-style: solid;
+    text-align: justify;
 }
-
+/*
+article.article-1{
+    top:5px;
+    position: sticky;
+}
+*/
 img.img-element{
     width: 500px;
+    margin: auto;
+    outline-style: solid;
 }
 
 img.img-attribute{
     width: 500px;
+    margin: auto;
 }
 
 
 article.article-1 img{
-    float: right;
-    width: 200px;
-    height: 200px;
-    outline-style: solid;
+    float: left;
+    width: 250px;
+    height: 250px;
 }
 
 
