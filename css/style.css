@@ -1,10 +1,6 @@
-body {
-    display: flex;
-    justify-content: center;
-}
-
-div.body-site {
+div.wrapper {
     width: 1380px;
+    margin: auto;
 }
 
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
