@@ -1,5 +1,5 @@
 body{
-    background-color: darkgrey;
+    /*background-color: #E9EFFD;*/
 }
 div.wrapper {
     /*outline-style: solid;*/
@@ -45,19 +45,25 @@ div.main{
 }
 
 aside.global_nav{
-    top:0px;
+    top:-1px;
     position: sticky;
-    background: aqua;
-    height: 25px;
+    background: #4F52FF;
+    height: 40px;
 }
 
 nav.global-nav{
     margin: auto;
     width: 500px;
     display: flex;
+    height: 100%;
     justify-content: space-evenly;
+
 }
 
+nav.global-nav a{
+    color: aliceblue;
+    align-self: center;
+}
 /* ---------- left colomn ---------- */
 aside.left{
     font-size: large;
@@ -89,22 +95,23 @@ section{
 article{
     outline-style: solid;
     text-align: justify;
-}
-/*
-article.article-1{
-    top:5px;
-    position: sticky;
-}
+    /*background: url('../images/html_elements.png')
 */
+}
+
+
 img.img-element{
+    display: block;
     width: 500px;
-    margin: auto;
-    outline-style: solid;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.img-attribute{
+    display: block;
     width: 500px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
