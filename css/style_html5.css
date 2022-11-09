@@ -1,5 +1,5 @@
 body{
-    /*background-color: #E9EFFD;*/
+    background-color: #edf0f8;
 }
 div.wrapper {
     /*outline-style: solid;*/
@@ -10,6 +10,7 @@ div.wrapper {
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
 /*header{
     outline-style: solid;
+
 }*/
 /*header nav{
     position: sticky;
@@ -37,7 +38,7 @@ div.wrapper {
 
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
 main{
-    outline-style: solid;
+    /*outline-style: solid;*/
 
 }
 div.main{
@@ -45,7 +46,7 @@ div.main{
 }
 
 aside.global_nav{
-    top:-1px;
+    top:0px;
     position: sticky;
     background: #4F52FF;
     height: 40px;
@@ -68,32 +69,33 @@ nav.global-nav a{
 aside.left{
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    outline-style: solid;
-    padding: 50px;
+    /*outline-style: solid;*/
+    padding: 70px;
 }
 
 aside.left nav{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    /*border: 1px solid rgb(143, 31, 31);*/
     padding: 20px;
     top: 40px;
     position: sticky;
 }
 
 aside.left a{
-    padding-bottom: 10px;
-    margin: auto;
+    padding-bottom: 20px;
+
+
 }
 
 
 /* ---------- center colomn ---------- */
 section{
-    outline-style: solid;
+    /*outline-style: solid;*/
 }
 
 article{
-    outline-style: solid;
+    /*outline-style: solid;*/
     text-align: justify;
     /*background: url('../images/html_elements.png')
 */
@@ -126,7 +128,7 @@ article.article-1 img{
 
 /* ----------------- ЧАСТЬ FOOTER -----------------------*/
 footer{
-    outline-style: solid;
+    /*outline-style: solid;*/
 }
 
 

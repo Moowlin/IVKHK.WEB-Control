@@ -1,0 +1,62 @@
+div.wrapper {
+    width: 1380px;
+    margin: auto;
+}
+
+/* ----------------- ЧАСТЬ HEADER -----------------------*/
+header{
+    outline-style: solid;
+}
+
+
+/* ----------------- ЧАСТЬ MAIN -----------------------*/
+main{
+    outline-style: solid;
+
+}
+
+
+/* ---------- left colomn ---------- */
+
+
+
+/* ---------- center colomn ---------- */
+
+
+
+
+
+/* ----------------- ЧАСТЬ FOOTER -----------------------*/
+footer{
+    outline-style: solid;
+}
+
+/*сделано с помощью  https://pinetools.com/syntax-highlighter */
+pre.hljs{
+    display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);
+
+}
+
+span.hljs-meta{
+    color: rgb(26, 57, 197);
+}
+span.hljs-tag{
+    color: rgb(16, 170, 16);
+}
+span.hljs-name{
+    font-weight: 700;
+}
+span.hljs-attr{ 
+}
+span.hljs-string{
+    color: rgb(177, 31, 31);
+}
+
+
+
+
+
+pre.hljs{
+
+    outline-style: solid;
+}
