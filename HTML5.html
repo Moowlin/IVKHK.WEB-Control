@@ -10,7 +10,7 @@
 <body>
 <div class="wrapper">
     <header>
-        <img src="images/header_HTML5-1.png" alt="Логотип HTML5">
+        <video src="images/header_HTML5.mp4" autoplay loop>
     </header>
 
     <main>
@@ -26,7 +26,7 @@
 
         <div class="main">
             <aside class="left">
-                <nav>
+                <nav class="page-nav">
                     <a href="./index.html">Что такое HTML</a>
                     <a href="./HTML5.html">Структура HTML-элементов</a>
                     <a href="./CSS3.html">Атрибуты</a>
@@ -37,7 +37,8 @@
             <section>
                 <article class="article-1">
                     <h2>Что такое HTML</h2>
-                    <img src="images/man-with-question.jpg">
+                    <img src="images/man-with-question.png" alt="Рисунок мужчина с вопросом">
+                    <div class="text">
                     <p>HTML (HyperText Markup Language) представляет язык разметки гипертекста, используемый
                         преимущественно для создания документов в сети интернет. HTML начал свой путь в начале 90-х
                         годов как примитивный язык для создания веб-страниц, и в настоящий момент уже трудно представить
@@ -51,11 +52,13 @@
                         <li>переопределение правил и семантики уже существовавших элементов HTML</li>
                     </ul>
                     </p>
+                    </div>
                 </article>
 
-                <article>
+                <article class="article-3">
                     <h2>Структура HTML-элементов</h2>
                     <img src="images/html_elements.png" alt="элемент HTML" class="img-element">
+                    <div class="text">
                     <p>Основными частями элемента являются:
                     <ol>
                         <li>Открывающий тег: Он состоит из названия (обозначения) элемента (в нашем случае, p),
@@ -72,6 +75,8 @@
                         <li>Элемент: открывающий тег + закрывающий тег + содержимое = элемент.</li>
                     </ol>
                     </p>
+                    </div>
+                    <div class="text">
                     <h3>Атрибуты</h3>
                     <p>У элементов также могут быть атрибуты, которые выглядят так:</p>
                     <img src="images/grumpy-cat-attribute-small.png" alt="атрибут html элемента" class="img-attribute">
@@ -88,13 +93,15 @@
                         <li>Значение атрибута, заключённое в кавычки.</li>
                     </ol>
                     </p>
+                    </div>
                 </article>
 
-                <article>
+                <article class="article-4">
                     <h2>Структура документа HTML5</h2>
+                    <div class="text">
                     <p>Каждый HTML документ, отвечающий спецификации HTML какой-либо версии, обязан начинаться со строки
                         декларации версии HTML, делается это с помощью объявления &lt;!DOCTYPE&gt;- доктайп . </p>
-                    <img src="images/example-code.PNG" alt="пример кода">
+                    <img src="images/example-code.PNG" alt="пример кода"class="img1">
                     <p>Для создания документа HTML5 нам нужны в первую очередь два элемента: DOCTYPE и html. Элемент
                         doctype или Document Type Declaration сообщает веб-браузеру тип документа.
                         <!DOCTYPE html> указывает, что данный документ является документом html и что используется
@@ -110,16 +117,28 @@
                         объектную модель документа, DOM (document object model). При этом элемент &lt;html&gt; является
                         корневым элементом.</p>
                     <img src="images/DOM.png" alt="Пример простейшей структуры веб-страницы">
+                    </div>
                 </article>
 
             </section>
 
 
         </div>
+        <a href="#top">
+            <img src="images/spaceship.png"
+                 alt="в начало"
+                 title="в начало"
+                 class="symbol-navigation">
+        </a>
+
     </main>
 
     <footer>
-        <p>FOOTER</p>
+        <img src="images/girl3.png" alt="girl-with-laptop">
+        <div class="text">
+        <p>JKTV22</p>
+        <p>Nizhegorodtseva Olga</p>
+        </div>
     </footer>
 </div>
 </body>

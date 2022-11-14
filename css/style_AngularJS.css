@@ -11,18 +11,13 @@ header{
 
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
 main{
-    outline-style: solid;
+    /*outline-style: solid;*/
 
 }
-
-div.code{
-    display: block;
-    margin: 0px 500px 0px 350px ;
-}
-
 div.main{
     display: flex;
 }
+
 aside.global_nav{
     top:0px;
     position: sticky;
@@ -43,6 +38,13 @@ nav.global-nav a{
     color: aliceblue;
     align-self: center;
 }
+
+div.code{
+    display: block;
+    margin: 0px 500px 0px 350px ;
+}
+
+
 /* ---------- left colomn ---------- */
 aside.left{
     font-size: large;
@@ -65,7 +67,6 @@ aside.left a{
 }
 
 
-
 /* ---------- center colomn ---------- */
 
 
@@ -74,35 +75,5 @@ aside.left a{
 
 /* ----------------- ЧАСТЬ FOOTER -----------------------*/
 footer{
-    outline-style: solid;
-}
-
-/*сделано с помощью  https://pinetools.com/syntax-highlighter */
-pre.hljs{
-    display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);
-
-}
-
-span.hljs-meta{
-    color: rgb(26, 57, 197);
-}
-span.hljs-tag{
-    color: rgb(16, 170, 16);
-}
-span.hljs-name{
-    font-weight: 700;
-}
-span.hljs-attr{ 
-}
-span.hljs-string{
-    color: rgb(177, 31, 31);
-}
-
-
-
-
-
-pre.hljs{
-
     outline-style: solid;
 }
