@@ -2,55 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
 
 
-
-body{
+body {
     background-color: rgba(34, 35, 39, 0.93);
 }
+
 div.wrapper {
-    /*outline-style: solid;*/
     width: 1380px;
     margin: auto;
 }
 
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
-header{
-
-
-}
-/*header nav{
-    position: sticky;
-    top: 10px;
-    z-index: 1;
-    border: 2px solid green;
-}*/
-
-/*header div.test{
-    display: flex;
-    justify-content: center;
-}*/
-
-
-/*header nav a{
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: aqua;
-    border: 1px solid red;
-    border-radius: 20%;
-}*/
-
-
 
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
-main{
+main {
     position: relative;
-    /*outline-style: solid;*/
-
 }
-div.main{
+
+div.main {
     display: flex;
 }
-h2{
+
+h2 {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -63,191 +35,241 @@ h2{
     padding-bottom: 10px;
 }
 
-h3{
+h3 {
     font-family: 'Noto Sans Mono', monospace;
 }
 
-aside.global_nav{
-    top:-1px;
+aside.global_nav {
+    top: -1px;
     position: sticky;
     background: #4F52FF;
     height: 60px;
 }
 
-nav.global-nav{
+nav.global-nav {
     margin: auto;
     width: 500px;
     display: flex;
     height: 100%;
     justify-content: space-evenly;
-
 }
 
-nav.global-nav a{
+nav.global-nav a {
     color: aliceblue;
     align-self: center;
-    border: solid 1px #fd837c;
     padding: 5px;
-    border-radius: 10px ;
-    background-color: #fd837c;
+    border-radius: 10px;
+    background-color: #e3eafc;
     color: #0d046d;
     font-family: 'Noto Sans Mono', monospace;
-
 }
 
-nav.global-nav a:hover{
-    animation: jump;
-    animation: jump 1s ease infinite;
-}
-@keyframes jump {
-    50% { transform: translateY(-10px); }
+nav.global-nav a:hover {
+    animation: run-left;
+    animation: run-left 1s ease infinite;
 }
 
-
-
- p, ul, ol{
-     font-family: 'Noto Sans Mono', monospace;
-     font-size: 14px;
-     margin-right: 10px;
- }
+@keyframes run-left {
+    50% {
+        transform: translateX(-10px);
+    }
+}
 
 
 /* ---------- left colomn ---------- */
-aside.left{
+aside.left {
     font-size: large;
     font-family: 'Noto Sans Mono', monospace;
     background: #4F52FF;
-    padding: 50px;
+    padding: 20px;
 }
 
-aside.left nav{
-    display: flex;
-    flex-direction: column;
-    /*border: 1px solid rgb(143, 31, 31);*/
-    padding: 20px;
-    top: 40px;
+div.nav {
+    top: 100px;
     position: sticky;
 }
 
-aside.left a{
-    padding-bottom: 10px;
-    padding-top: 10px;
+aside.left nav {
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    top: -290px;
+    position: relative;
+}
+
+aside.left a {
+    padding-bottom: 6px;
+    padding-top: 6px;
     text-align: center;
     color: #0d046d;
 }
 
-nav.page-nav{
-    border: solid 1px sandybrown;
-    background-color: #fd837c;
-    border-radius: 15px 100px 15px 100px;
+nav.page-nav {
+    background-image: url(images/girl-with-desk.png);
+    width: 210px;
 }
 
+img.img-nav {
+    width: 250px;
+    height: 415px;
+    position: sticky;
+}
 
 /* ---------- center colomn ---------- */
-section{
-    /*outline-style: solid;*/
+section {
     padding: 10px;
 }
 
-article{
-    /*outline-style: solid;*/
+article {
     text-align: justify;
-    /*background: url('../images/html_elements.png')
-*/
 }
 
-.article-1{
-    padding: 15px;
-}
-div.text{
+div.text {
     background-color: #e3eafc;
     padding: 20px;
-    border-radius: 100px;
-    margin-bottom: 50px;
-
+    border-radius: 50px;
+    margin-bottom: 40px;
 }
 
-
-img.img-element{
-    display: block;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+p, ul, ol {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 14px;
+    margin-right: 10px;
 }
 
-img.img-attribute{
-    display: block;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+#article-1 {
+    padding: 15px;
 }
 
-
-article.article-1 img{
+article#article-1 img {
     float: left;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 275px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-article.article-4 img{
+img.img-element {
+    display: block;
+    width: 500px;
+    float: right;
+    margin: 70px 10px 10px 10px;
+}
+
+img.img-attribute {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article#article-4 img {
     margin: auto;
     display: block;
     margin-left: auto;
     margin-right: auto
 }
 
-
-article.article-4 img.img1{
+article#article-4 img.img1 {
     float: right;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
 
-    /* ----------------- ЧАСТЬ FOOTER -----------------------*/
-footer{
+/* ----------------- ЧАСТЬ FOOTER -----------------------*/
+footer {
     background: #4F52FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer img{
+img#girl {
     width: 100px;
     height: 256px;
+}
+
+div#img-foot img {
+    margin: 2px;
+}
+
+img#notion {
+    width: 60px;
+    height: 61px;
+}
+
+img#github {
+    width: 60px;
+    height: 64px;
+}
+
+div.elem-footer {
+
+    display: flex;
+    flex-direction: column;
 
 }
 
-footer div{
-    display: block;
-    width: 200px;
+div#img-foot {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
 }
-footer p{
+
+img#notion:hover {
+    animation: run-left;
+    animation: run-left 1s ease infinite;
+}
+
+img#github:hover {
+    animation: run-right;
+    animation: run-right 1s ease infinite;
+}
+
+@keyframes run-right {
+    50% {
+        transform: translateX(10px);
+    }
+}
+div#text {
+    background-color: #e3eafc;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+footer p {
     margin: 0 0 0 0;
     text-align: center;
 }
 
-img.symbol-navigation{
+img.symbol-navigation {
     display: block;
-    width: 50px;
-    height: 80px;
+    width: 100px;
+    height: 218px;
     right: 50px;
     top: 800px;
     position: fixed;
 }
 
-img.symbol-navigation:hover{
+img.symbol-navigation:hover {
     animation: jump;
-    animation: jump 1s ease infinite;
+    animation: jump 2s ease-in-out infinite /*бесконечное проигрывание*/;
 }
+
 @keyframes jump {
-    50% { transform: translateY(-30px); }
+    100% {
+        transform: translateY(-1200px);
+    }
 }
 
-/*https://ru.stackoverflow.com/questions/1130013/%D0%9A%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D0%B1%D1%8B-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%BB%D0%BE%D1%81%D1%8C*/
-
-
-
-
-
-
-
+/* Источники по анимации: */
+/* https://ru.stackoverflow.com/questions/1130013/%D0%9A%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D0%B1%D1%8B-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%BB%D0%BE%D1%81%D1%8C */
+/* https://idg.net.ua/blog/uchebnik-css/ispolzovanie-css/transform/translate */
+/* https://www.youtube.com/watch?v=GKgOOuTL0po */
+/* Шпаргалка по анимации: */
+/* https://fls.guru/cssanimation.html */
+/* Шпаргалка по flex: */
+/* https://tpverstak.ru/flex-cheatsheet/ */
