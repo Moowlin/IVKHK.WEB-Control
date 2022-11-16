@@ -1,86 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+
+body {
+    background-color: rgba(34, 35, 39, 0.93);
+}
+
 div.wrapper {
     width: 1380px;
     margin: auto;
 }
 
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
-header{
-    outline-style: solid;
-}
-
 
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
-main{
-    outline-style: solid;
+main {
+    position: relative;
+}
+
+div.main {
+    display: flex;
+}
+
+h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+    -webkit-text-stroke: 1px #fc78ff;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+aside.global_nav {
+    top: -1px;
+    position: sticky;
+    background: #4F52FF;
+    height: 60px;
+}
+
+nav.global-nav {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+nav.global-nav a {
+    color: aliceblue;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e3eafc;
+    color: #0d046d;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+nav.global-nav a:hover {
+    animation: run-left;
+    animation: run-left 1s ease infinite;
+}
+
+@keyframes run-left {
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+
+/* ---------- left colomn ---------- */
+aside.left {
+    font-size: large;
+    font-family: 'Noto Sans Mono', monospace;
+    background: #4F52FF;
+    padding: 20px;
+}
+
+div.nav {
+    top: 100px;
+    position: sticky;
+}
+
+aside.left nav {
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    top: -290px;
+    position: relative;
+}
+
+aside.left a {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-align: center;
+    color: #0d046d;
+}
+
+nav.page-nav {
+    background-image: url(images/girl-with-desk.png);
+    width: 210px;
+}
+
+img.img-nav {
+    width: 250px;
+    height: 415px;
+    position: sticky;
+}
+
+/* ---------- center colomn ---------- */
+div.section {
+    padding: 10px;
+}
+
+article {
+    text-align: justify;
+}
+
+div.text {
+    background-color: #e3eafc;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+p, ul, ol {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#article-1 {
+    padding: 15px;
+}
+
+article#article-1 img {
+    float: left;
+    width: 150px;
+    height: 275px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+img.img-element {
+    display: block;
+    width: 500px;
+    float: right;
+    margin: 70px 10px 10px 10px;
+}
+
+img.img-attribute {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article#article-4 img {
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+article#article-4 img.img1 {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ----------------- ЧАСТЬ FOOTER -----------------------*/
+footer {
+    background: #4F52FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#girl {
+    width: 100px;
+    height: 256px;
+}
+
+div#img-foot img {
+    margin: 2px;
+}
+
+img#notion {
+    width: 60px;
+    height: 61px;
+}
+
+img#github {
+    width: 60px;
+    height: 64px;
+}
+
+div.elem-footer {
+
+    display: flex;
+    flex-direction: column;
 
 }
+
+div#img-foot {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+img#notion:hover {
+    animation: run-left;
+    animation: run-left 1s ease infinite;
+}
+
+img#github:hover {
+    animation: run-right;
+    animation: run-right 1s ease infinite;
+}
+
+@keyframes run-right {
+    50% {
+        transform: translateX(10px);
+    }
+}
+div#text {
+    background-color: #e3eafc;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+img.symbol-navigation {
+    display: block;
+    width: 100px;
+    height: 218px;
+    right: 50px;
+    top: 800px;
+    position: fixed;
+}
+
+img.symbol-navigation:hover {
+    animation: jump;
+    animation: jump 2s ease-in-out infinite /*бесконечное проигрывание*/;
+}
+
+@keyframes jump {
+    100% {
+        transform: translateY(-1200px);
+    }
+}
+
+/* Источники по анимации: */
+/* https://ru.stackoverflow.com/questions/1130013/%D0%9A%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D0%B1%D1%8B-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%BB%D0%BE%D1%81%D1%8C */
+/* https://idg.net.ua/blog/uchebnik-css/ispolzovanie-css/transform/translate */
+/* https://www.youtube.com/watch?v=GKgOOuTL0po */
+/* Шпаргалка по анимации: */
+/* https://fls.guru/cssanimation.html */
+/* Шпаргалка по flex: */
+/* https://tpverstak.ru/flex-cheatsheet/ */
+
+
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+
+body {
+    background-color: rgba(34, 35, 39, 0.93);
+}
+
+div.wrapper {
+    width: 1380px;
+    margin: auto;
+}
+
+
+main{
+    position: relative;
+}
+
+div.main{
+    display: flex;
+}
+
+h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+    -webkit-text-stroke: 1px #fc78ff;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+aside.global_nav {
+    top: -1px;
+    position: sticky;
+    background: #4F52FF;
+    height: 60px;
+}
+
+nav.global-nav {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+nav.global-nav a {
+    color: aliceblue;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e3eafc;
+    color: #0d046d;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+nav.global-nav a:hover {
+    animation: run-left;
+    animation: run-left 1s ease infinite;
+}
+
+@keyframes run-left {
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+
 
 div.code{
     display: block;
     margin: 0px 500px 0px 350px ;
 }
 
-div.main{
-    display: flex;
-}
-aside.global_nav{
-    top:0px;
-    position: sticky;
-    background: #4F52FF;
-    height: 40px;
-}
 
-nav.global-nav{
-    margin: auto;
-    width: 500px;
-    display: flex;
-    height: 100%;
-    justify-content: space-evenly;
-
-}
-
-nav.global-nav a{
-    color: aliceblue;
-    align-self: center;
-}
-/* ---------- left colomn ---------- */
-aside.left{
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*outline-style: solid;*/
-    padding: 70px;
-}
-
-aside.left nav{
-    display: flex;
-    flex-direction: column;
-    /*border: 1px solid rgb(143, 31, 31);*/
-    padding: 20px;
-    top: 40px;
-    position: sticky;
-}
-
-aside.left a{
-    padding-bottom: 20px;
-}
-
-
-
-/* ---------- center colomn ---------- */
-
-
-
-
-
-/* ----------------- ЧАСТЬ FOOTER -----------------------*/
-footer{
-    outline-style: solid;
-}
-
-/*сделано с помощью  https://pinetools.com/syntax-highlighter */
 pre.hljs{
     display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240); color: rgb(68, 68, 68);
-
 }
 
 span.hljs-meta{
@@ -92,17 +372,207 @@ span.hljs-tag{
 span.hljs-name{
     font-weight: 700;
 }
-span.hljs-attr{ 
+span.hljs-attr{
 }
 span.hljs-string{
     color: rgb(177, 31, 31);
 }
 
-
-
-
-
 pre.hljs{
 
     outline-style: solid;
 }
+
+
+
+aside.left {
+    font-size: large;
+    font-family: 'Noto Sans Mono', monospace;
+    background: #4F52FF;
+    padding: 20px;
+}
+
+div.nav {
+    top: 100px;
+    position: sticky;
+}
+
+aside.left nav {
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    top: -290px;
+    position: relative;
+}
+
+aside.left a {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    text-align: center;
+    color: #0d046d;
+}
+
+nav.page-nav {
+    background-image: url(images/girl-with-desk.png);
+    width: 210px;
+}
+
+img.img-nav {
+    width: 250px;
+    height: 415px;
+    position: sticky;
+}
+
+
+
+div.section {
+    padding: 10px;
+}
+
+article {
+    text-align: justify;
+}
+
+div.text {
+    background-color: #e3eafc;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+p, ul, ol {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#article-1 {
+    padding: 15px;
+}
+
+article#article-1 img {
+    float: left;
+    width: 150px;
+    height: 275px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+img.img-element {
+    display: block;
+    width: 500px;
+    float: right;
+    margin: 70px 10px 10px 10px;
+}
+
+img.img-attribute {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article#article-4 img {
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+article#article-4 img.img1 {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+footer {
+    background: #4F52FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#girl {
+    width: 100px;
+    height: 256px;
+}
+
+div#img-foot img {
+    margin: 2px;
+}
+
+img#notion {
+    width: 60px;
+    height: 61px;
+}
+
+img#github {
+    width: 60px;
+    height: 64px;
+}
+
+div.elem-footer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+div#img-foot {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+img#notion:hover {
+    animation: run-left;
+    animation: run-left 1s ease infinite;
+}
+
+img#github:hover {
+    animation: run-right;
+    animation: run-right 1s ease infinite;
+}
+
+@keyframes run-right {
+    50% {
+        transform: translateX(10px);
+    }
+}
+div#text {
+    background-color: #e3eafc;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+img.symbol-navigation {
+    display: block;
+    width: 100px;
+    height: 218px;
+    right: 50px;
+    top: 800px;
+    position: fixed;
+}
+
+img.symbol-navigation:hover {
+    animation: jump;
+    animation: jump 2s ease-in-out infinite ;
+}
+
+@keyframes jump {
+    100% {
+        transform: translateY(-1200px);
+    }
+}
+
+*/

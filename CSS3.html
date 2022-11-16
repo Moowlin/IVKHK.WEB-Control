@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <title>CSS3</title>
     <link rel="stylesheet" type="text/css" href="css/style_css3.css">
+
 </head>
 
 <body>
 <div class="wrapper">
     <header>
-        <img src="images/header_CSS.png" alt="Логотип HTML5">
-
+        <img src="images/header_CSS.png" alt="Логотип CSS">
     </header>
 
     <main>
@@ -27,68 +27,103 @@
 
         <div class="main">
             <aside class="left">
-                <nav>
-                    <a href="./index.html">Что такое CSS3</a>
-                    <a href="./HTML5.html">Синтаксис CSS3</a>
-                    <a href="./CSS3.html">Присоединение CSS к HTML-документу</a>
-                </nav>
+                <div class="nav">
+                    <img src="images/girl-with-desk.png" alt="Девочка с табличкой" class="img-nav">
+                    <nav class="page-nav">
+                        <a href="./index.html">Что такое CSS3</a>
+                        <a href="./HTML5.html">Синтаксис CSS3</a>
+                        <a href="./CSS3.html">Присоединение CSS к HTML-документу</a>
+                    </nav>
+                </div>
             </aside>
 
-            <section>
-                <article>
+            <div class="section">
+                <article id="article-1">
                     <h2>Что такое CSS</h2>
-                    <p>Любой html-документ, сколько бы он элементов не содержал, будет по сути "мертвым" без использования стилей. Стили или лучше сказать каскадные таблицы стилей (Cascading Style Sheets) или попросту CSS определяют представление документа, его внешний вид. Рассмотрим вкратце применение стилей в контексте HTML5.</p>
-                    <p>Используя CSS, вы можете до мелочей контролировать, как элементы HTML выглядят в браузере, представляя вашу разметку, используя любой понравившийся вам дизайн.</p>
-                    <p>Стиль в CSS представляет правило, которое указывает веб-браузеру, как надо форматировать элемент. Форматирование может включать установку цвета фона элемента, установку цвета и типа шрифта и так далее.</p>
+                    <div class="text">
+                        <p>Любой html-документ, сколько бы он элементов не содержал, будет по сути "мертвым" без
+                            использования стилей. Стили или лучше сказать каскадные таблицы стилей (Cascading Style
+                            Sheets) или попросту CSS определяют представление документа, его внешний вид. Рассмотрим
+                            вкратце применение стилей в контексте HTML5.</p>
+                        <p>Используя CSS, вы можете до мелочей контролировать, как элементы HTML выглядят в браузере,
+                            представляя вашу разметку, используя любой понравившийся вам дизайн.</p>
+                        <p>Стиль в CSS представляет правило, которое указывает веб-браузеру, как надо форматировать
+                            элемент. Форматирование может включать установку цвета фона элемента, установку цвета и типа
+                            шрифта и так далее.</p>
+                    </div>
                 </article>
-                <article>
+                <article id="article-2">
                     <h2>Синтаксис CSS</h2>
-                    <p>Таблица стилей составлена из одной и более инструкций (называемых правилами или наборами правил), которые описывают, как элемент или группа элементов должны отображаться.</p>
-                    <blockquote>Каждое правило выбирает элемент и объявляет, как он должен выглядеть</blockquote>
-                    <p>Согласно терминологии CSS существует две главные части правила — это селектор, устанавливающий элемент или элементы, на которые надо воздействовать, и определение, предоставляющее инструкции представления. Определение, в свою очередь, составлено из свойства (например, color) и его значения (green) , разделенных двоеточием и пробелом. Одно или более определений размещаются внутри фигурных скобок, как показано на рисунке ниже.</p>
-                    <img src="images/css-selector.jpg" alt="Пример селектора">
-                    <h3>Определения</h3>
-                    <p>Определение составлено из пары свойство/значение. Допустимо использовать несколько определений в одном правиле, например, указанное выше правило для элемента &lt;p&gt; имеет свойства как font-size, так и font-family.</p>
-                    <p>Каждое определение должно оканчиваться точкой с запятой для отделения его от следующего. Если вы пропустите этот знак препинания, то следующее за ним определение будет игнорироваться.</p>
-                    <p>Фигурные скобки и заключенные в них определения часто называются блоком определения.</p>
-                    <p>Из-за того, что таблицы CSS игнорируют пробельные символы и переходы на новую строку внутри блока определения, верстальщики обычно пишут каждое определение в блоке на отдельной строке, как показано в следующем примере. Благодаря этому легче найти свойства, применяемые к селектору, и сказать, где заканчивается правило описания стиля.</p>
-                    <img src="images/css_sel.jpg" alt="Пример селектора">
+                    <div class="text">
+                        <p>Таблица стилей составлена из одной и более инструкций (называемых правилами или наборами
+                            правил), которые описывают, как элемент или группа элементов должны отображаться.</p>
+                        <blockquote>Каждое правило выбирает элемент и объявляет, как он должен выглядеть</blockquote>
+                        <p>Согласно терминологии CSS существует две главные части правила — это селектор,
+                            устанавливающий элемент или элементы, на которые надо воздействовать, и определение,
+                            предоставляющее инструкции представления. Определение, в свою очередь, составлено из
+                            свойства (например, color) и его значения (green) , разделенных двоеточием и пробелом. Одно
+                            или более определений размещаются внутри фигурных скобок, как показано на рисунке ниже.</p>
+                        <img src="images/css-selector.jpg" alt="Пример селектора">
+                        <h3>Определения</h3>
+                        <p>Определение составлено из пары свойство/значение. Допустимо использовать несколько
+                            определений в одном правиле, например, указанное выше правило для элемента &lt;p&gt; имеет
+                            свойства как font-size, так и font-family.</p>
+                        <p>Каждое определение должно оканчиваться точкой с запятой для отделения его от следующего. Если
+                            вы пропустите этот знак препинания, то следующее за ним определение будет
+                            игнорироваться.</p>
+                        <p>Фигурные скобки и заключенные в них определения часто называются блоком определения.</p>
+                        <p>Из-за того, что таблицы CSS игнорируют пробельные символы и переходы на новую строку внутри
+                            блока определения, верстальщики обычно пишут каждое определение в блоке на отдельной строке,
+                            как показано в следующем примере. Благодаря этому легче найти свойства, применяемые к
+                            селектору, и сказать, где заканчивается правило описания стиля.</p>
+                        <div class="text">
+                            <img src="images/css_sel.jpg" alt="Пример селектора">
 
                 </article>
                 <article>
                     <h2>Присоединение CSS к HTML-документу</h2>
-                    <p>Есть три способа применить правила CSS к HTML-документу. Ниже мы рассмотрим эти три метода. Мы рекомендуем сосредоточиться на третьем - то есть внешней/external таблице стилей.</p>
+                    <p>Есть три способа применить правила CSS к HTML-документу. Ниже мы рассмотрим эти три метода. Мы
+                        рекомендуем сосредоточиться на третьем - то есть внешней/external таблице стилей.</p>
                     <h3>Метод 1: Встроенные стили (Inline Style Sheets)</h3>
-                    <p>Можно применять CSS к HTML с помощью HTML-атрибута style. Красный цвет текста для абзаца можно установить так:</p>
+                    <p>Можно применять CSS к HTML с помощью HTML-атрибута style. Красный цвет текста для абзаца можно
+                        установить так:</p>
                     <div class="code">
-<pre class="hljs"><span class="xml"><span class="hljs-meta" >&lt;!DOCTYPE html&gt;</span>
+<pre class="hljs"><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример встроенных стилей<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span
+                class="hljs-string">"utf-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример встроенных стилей<span
+            class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: red;"</span>&gt;</span>Это текст будет отображаться красным цветом<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span
+                class="hljs-string">"color: red;"</span>&gt;</span>Это текст будет отображаться красным цветом<span
+            class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
                     </div>
 
 
-
                     <h3>Метод 2: Глобальные таблицы стилей (Global Style Sheets)</h3>
-                    <p>Глобальные стили задают вид элементов всей страницы HTML. Для этого используется пара тегов &lt;STYLE type="text/css"&gt; и &lt;/STYLE&gt;. Он размещается в заголовке документа.</p>
+                    <p>Глобальные стили задают вид элементов всей страницы HTML. Для этого используется пара тегов &lt;STYLE
+                        type="text/css"&gt; и &lt;/STYLE&gt;. Он размещается в заголовке документа.</p>
                     <div class="code">
 <pre class="hljs"><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример глобальных стилей<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span><span class="css">
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span
+                class="hljs-string">"utf-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример глобальных стилей<span
+            class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span
+                class="hljs-string">"text/css"</span>&gt;</span><span class="css">
             <span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">color</span>: red; }
         </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Это текст будет отображаться красным цветом<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Это текст будет отображаться красным цветом<span
+            class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
                     </div>
@@ -96,7 +131,8 @@
                     <h3>Метод 3: Внешние таблицы стилей</h3>
                     <p>Рекомендуемый метод - создание ссылки на так называемую внешнюю таблицу стилей.</p>
                     <p>Внешняя таблица стилей - это просто текстовый файл с расширением .css.</p>
-                    <p>Например, скажем, таблица стилей вашего проекта называется style.css и находится в папке css. Это можно проиллюстрировать так:</p>
+                    <p>Например, скажем, таблица стилей вашего проекта называется style.css и находится в папке css. Это
+                        можно проиллюстрировать так:</p>
                     <img src="images/file-chema.png" alt="Схема расположения файлов">
                     <p>Весь фокус состоит в том, чтобы создать ссылку из HTML-документа index.html на таблицу
                         стилей style.css. Это можно сделать одной строчкой HTML-кода:</p>
@@ -112,12 +148,16 @@
 <span class="hljs-meta">&lt;!DOCTYPE HTML&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример глобальных стилей<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/style.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span
+            class="hljs-string">"utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Пример глобальных стилей<span
+                            class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span
+            class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/style.css"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Это текст будет отображаться красным цветом<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Это текст будет отображаться красным цветом<span
+                            class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
                     </div>
@@ -126,7 +166,7 @@
                 </article>
 
 
-            </section>
+            </div>
         </div>
 
     </main>
