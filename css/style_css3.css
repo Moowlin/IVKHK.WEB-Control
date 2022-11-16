@@ -115,8 +115,8 @@ img.img-nav {
 }
 
 /* ---------- center colomn ---------- */
-div.section {
-    padding: 10px;
+section {
+    padding: 20px;
 }
 
 article {
@@ -136,45 +136,72 @@ p, ul, ol {
     margin-right: 10px;
 }
 
-#article-1 {
-    padding: 15px;
-}
-
-article#article-1 img {
-    float: left;
-    width: 150px;
-    height: 275px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-img.img-element {
-    display: block;
-    width: 500px;
+img#rule-css{
+    width: 400px;
+    height: 160px;
     float: right;
-    margin: 70px 10px 10px 10px;
+    margin: 15px;
+    margin-bottom: 25px;
+    border-radius: 50px;
 }
 
-img.img-attribute {
-    display: block;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+img#example-selector{
+    float: left;
+    margin: 15px;
+    border-radius: 20px;
 }
 
-article#article-4 img {
-    margin: auto;
+article#article-1 img{
+    width: 145px;
+    height: 220px;
+    float: left;
+    margin-right: 15px;
+}
+
+article#article-3 img{
+    border-radius: 20px;
+    width: 200px;
+    height: 135px;
     display: block;
     margin-left: auto;
     margin-right: auto
 }
 
-article#article-4 img.img1 {
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 20px;
+div.code{
+    display: block;
+    margin: 0px 200px 0px 150px ;
+    box-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
 }
+
+
+pre.hljs{
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: rgb(240, 240, 240);
+    color: rgb(68, 68, 68);
+}
+
+span.hljs-meta{
+    color: rgb(26, 57, 197);
+}
+span.hljs-tag{
+    color: rgb(16, 170, 16);
+}
+span.hljs-name{
+    font-weight: 700;
+}
+span.hljs-attr{
+}
+span.hljs-string{
+    color: rgb(177, 31, 31);
+}
+
+pre.hljs{
+
+    outline-style: solid;
+}
+
 
 
 /* ----------------- ЧАСТЬ FOOTER -----------------------*/

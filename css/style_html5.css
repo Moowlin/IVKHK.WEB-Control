@@ -115,8 +115,8 @@ img.img-nav {
 }
 
 /* ---------- center colomn ---------- */
-div.section {
-    padding: 10px;
+section {
+    padding: 20px;
 }
 
 article {
@@ -136,9 +136,6 @@ p, ul, ol {
     margin-right: 10px;
 }
 
-#article-1 {
-    padding: 15px;
-}
 
 article#article-1 img {
     float: left;
@@ -161,6 +158,8 @@ img.img-attribute {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
 }
 
 article#article-4 img {
@@ -174,6 +173,8 @@ article#article-4 img.img1 {
     float: right;
     margin-left: 20px;
     margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
 }
 
 
@@ -205,10 +206,8 @@ img#github {
 }
 
 div.elem-footer {
-
     display: flex;
     flex-direction: column;
-
 }
 
 div#img-foot {
