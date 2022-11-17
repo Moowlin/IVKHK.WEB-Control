@@ -11,7 +11,29 @@ div.wrapper {
 }
 
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
-
+header{
+    background: #4f52fe;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px 50px 0px 0;
+}
+img#header-img-1{
+    width: 88px;
+    height: 200px;
+    margin-left: 50px;
+}
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+    -webkit-text-stroke: 1px #fc78ff;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
 main {
     position: relative;
@@ -43,6 +65,7 @@ aside.global_nav {
     position: sticky;
     background: #4F52FF;
     height: 60px;
+    border-radius: 00px 00px 50px 0;
 }
 
 nav.global-nav {
@@ -184,6 +207,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 50px 50px 50px;
 }
 
 img#girl {

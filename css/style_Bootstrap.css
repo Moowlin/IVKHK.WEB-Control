@@ -11,7 +11,29 @@ div.wrapper {
 }
 
 /* ----------------- ЧАСТЬ HEADER -----------------------*/
-
+header{
+    background: #4f52fe;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px 50px 0px 0;
+}
+img#header-img-1{
+    width: 88px;
+    height: 200px;
+    margin-left: 50px;
+}
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+    -webkit-text-stroke: 1px #fc78ff;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /* ----------------- ЧАСТЬ MAIN -----------------------*/
 main {
     position: relative;
@@ -34,15 +56,13 @@ h2 {
     padding-bottom: 10px;
 }
 
-h3 {
-    font-family: 'Noto Sans Mono', monospace;
-}
 
 aside.global_nav {
     top: -1px;
     position: sticky;
     background: #4F52FF;
     height: 60px;
+    border-radius: 0px 0px 50px 0;
 }
 
 nav.global-nav {
@@ -91,21 +111,17 @@ div.nav {
 aside.left nav {
     display: flex;
     flex-direction: column;
-    left: 20px;
+    padding: 0 15px 0 15px;
     top: -290px;
     position: relative;
 }
 
 aside.left a {
-    padding-bottom: 6px;
+    padding-bottom: 10px;
     padding-top: 6px;
     text-align: center;
     color: #0d046d;
-}
-
-nav.page-nav {
-    background-image: url(images/girl-with-desk.png);
-    width: 210px;
+    font-size: 14px;
 }
 
 img.img-nav {
@@ -115,12 +131,28 @@ img.img-nav {
 }
 
 /* ---------- center colomn ---------- */
-div.section {
-    padding: 10px;
+section {
+    padding: 20px;
 }
 
 article {
     text-align: justify;
+}
+
+div#article-2and3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+article#article-2{
+    margin-right: 10px;
+}
+
+article#article-2 div{
+    margin-top: 62px;
+}
+
+article#article-3{
+    margin-left: 10px;
 }
 
 div.text {
@@ -136,45 +168,37 @@ p, ul, ol {
     margin-right: 10px;
 }
 
-#article-1 {
-    padding: 15px;
+img#girl-with-laptop{
+    width: 200px;
+    height: 323px;
+    float: right;
+    margin-left: 10px;
 }
 
-article#article-1 img {
+img#girl-with-gear-wheels{
+    width: 200px;
+    height: 320px;
     float: left;
-    width: 150px;
-    height: 275px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
-img.img-element {
-    display: block;
-    width: 500px;
+img#girl-with-books{
+    width: 200px;
+    height: 245px;
     float: right;
-    margin: 70px 10px 10px 10px;
+    margin-left: 10px;
 }
 
-img.img-attribute {
-    display: block;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+img#girl-stand{
+    width: 200px;
+    height: 338px;
+    float: left;
+    margin-right: 10px;
 }
 
-article#article-4 img {
-    margin: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
 
-article#article-4 img.img1 {
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
+
 
 
 /* ----------------- ЧАСТЬ FOOTER -----------------------*/
@@ -183,6 +207,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 50px 50px 50px;
 }
 
 img#girl {
@@ -205,16 +230,14 @@ img#github {
 }
 
 div.elem-footer {
-
     display: flex;
     flex-direction: column;
-
 }
 
 div#img-foot {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -272,3 +295,8 @@ img.symbol-navigation:hover {
 /* https://fls.guru/cssanimation.html */
 /* Шпаргалка по flex: */
 /* https://tpverstak.ru/flex-cheatsheet/ */
+
+
+
+
+
